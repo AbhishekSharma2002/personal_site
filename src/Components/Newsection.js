@@ -5,15 +5,73 @@ import { Link, Outlet } from 'react-router-dom'
 export default function Newsection() {
   return (
     <>
-      <div className='flex mt-10 justify-evenly'>
-        <div className='p-20'>
-          <div className='text-4xl'>Welcome to <b className='text-purple-700'>CodeWithAbhishek</b></div>
-          <p className='w-96'>Confused on which course to take? I have got you covered. Browse courses and find out the best course for you. Its free! Code With Harry is my attempt to teach basics and those coding techniques to people in short time which took me ages to learn.</p>
-          <button className='p-2 bg-slate-900  mt-4 text-white rounded-md max-w-max hover:bg-slate-700' ><Link to="/Home/Enroll">Click Here For Create Website</Link></button>
+      <div className='dark:text-white dark:bg-slate-800 h-screen'>
+        <div className='flex max-h-max justify-center gap-10 items-center '>
+          <div className=''>
+            <div className='text-4xl'>Welcome to <b className='text-purple-700'>CodeWithAbhishek</b></div>
+            <p className='w-96'>Confused on which course to take? I have got you covered. Browse courses and find out the best course for you. Its free! Code With Harry is my attempt to teach basics and those coding techniques to people in short time which took me ages to learn.</p>
+            <button className='p-2 bg-slate-900  mt-4 text-white rounded-md max-w-max hover:bg-slate-700 dark:bg-purple-700' ><Link to="/Home/Enroll">Click Here For Create Website</Link></button>
+          </div>
+          <div className=''>
+            <img className='rounded-xl shadow-2xl' src='https://media.istockphoto.com/id/1201166649/photo/office-responsive-devices-web-design-website.jpg?s=612x612&w=0&k=20&c=w1zX61Nw0p3aguqUj9FFrUV9hl8l67zut_ZhdnB9p-E=' alt=''></img>
+          </div>
         </div>
-        <div className=''>
-          <img className='rounded-xl shadow-2xl' src='https://media.istockphoto.com/id/1201166649/photo/office-responsive-devices-web-design-website.jpg?s=612x612&w=0&k=20&c=w1zX61Nw0p3aguqUj9FFrUV9hl8l67zut_ZhdnB9p-E=' alt=''></img>
+        {/* Password Generator */}
+        <div className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 bg-black text-orange-500">
+          <h1 className='text-white text-center my-3'>Password generator</h1>
+          <div className="flex shadow rounded-lg overflow-hidden mb-4">
+            <input
+              type="text"
+              // value={password}
+              className="outline-none w-full py-1 px-3"
+              placeholder="Password"
+              readOnly
+            // ref={passwordRef}
+            />
+            <button
+              // onClick={copyPasswordToClipboard}
+              className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0'
+            >copy</button>
+
+          </div>
+          <div className='flex text-sm gap-x-2'>
+            <div className='flex items-center gap-x-1'>
+              <input
+                type="range"
+                min={6}
+                max={100}
+              // value={length}
+              // className='cursor-pointer'
+              // onChange={(e) => { setLength(e.target.value) }}
+              />
+              {/* <label>Length: {length}</label> */}
+            </div>
+            <div className="flex items-center gap-x-1">
+              <input
+                type="checkbox"
+                // defaultChecked={numberAllowed}
+                id="numberInput"
+              // onChange={() => {
+              //   setNumberAllowed((prev) => !prev);
+              // }}
+              />
+              <label htmlFor="numberInput">Numbers</label>
+            </div>
+            <div className="flex items-center gap-x-1">
+              <input
+                type="checkbox"
+                // defaultChecked={charAllowed}
+                id="characterInput"
+              // onChange={() => {
+              //   setCharAllowed((prev) => !prev)
+              // }}
+              />
+              <label htmlFor="characterInput">Characters</label>
+            </div>
+          </div>
         </div>
+
+
       </div>
       <Outlet />
     </>
