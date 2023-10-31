@@ -38,6 +38,18 @@ export default function Newsection() {
   useEffect(() => {
     passwordGenerator()
   }, [length, numberAllowed, charAllowed, passwordGenerator])
+
+  // github
+
+  // const [data, setData] = useState([]);
+  // useEffect(() => {
+  //   fetch('https://api.github.com/users/AbhishekSharma2002')
+  //     .then(response => response.json())
+  //     .then(data => {
+  //       console.log(data)
+  //       setData(data)
+  //     })
+  // }, [])
   return (
     <>
       <div className='dark:text-white dark:bg-slate-800 h-screen'>
@@ -61,7 +73,7 @@ export default function Newsection() {
               className="outline-none w-full py-1 px-3"
               placeholder="Password"
               readOnly
-            ref={passwordRef}
+              ref={passwordRef}
             />
             <button
               onClick={copyPasswordToClipboard}
@@ -75,9 +87,9 @@ export default function Newsection() {
                 type="range"
                 min={6}
                 max={100}
-              value={length}
-              className='cursor-pointer'
-              onChange={(e) => { setLength(e.target.value) }}
+                value={length}
+                className='cursor-pointer'
+                onChange={(e) => { setLength(e.target.value) }}
               />
               <label>Length: {length}</label>
             </div>
@@ -86,9 +98,9 @@ export default function Newsection() {
                 type="checkbox"
                 defaultChecked={numberAllowed}
                 id="numberInput"
-              onChange={() => {
-                setNumberAllowed((prev) => !prev);
-              }}
+                onChange={() => {
+                  setNumberAllowed((prev) => !prev);
+                }}
               />
               <label htmlFor="numberInput">Numbers</label>
             </div>
@@ -97,16 +109,19 @@ export default function Newsection() {
                 type="checkbox"
                 defaultChecked={charAllowed}
                 id="characterInput"
-              onChange={() => {
-                setCharAllowed((prev) => !prev)
-              }}
+                onChange={() => {
+                  setCharAllowed((prev) => !prev)
+                }}
               />
               <label htmlFor="characterInput">Characters</label>
             </div>
           </div>
         </div>
 
-
+        {/* Github Account */}
+        {/* <div className='text-center  text-white text-3xl flex'>Github followers: {data.followers}
+          <img src={data.avatar_url} alt='' width={150}></img>
+        </div> */}
       </div>
       <Outlet />
     </>

@@ -1,8 +1,8 @@
 import React from 'react'
-import instagram from "./instagram logo.png"
-import gmailLogo from "./Gmail logo.png"
-import whatsappLogo from "./Whatsapp logo.png"
-import linkedinLogo from "./Linkedin logo.png"
+import instagram from "./files/instagram logo.png"
+import gmailLogo from "./files/Gmail logo.png"
+import whatsappLogo from "./files/Whatsapp logo.png"
+import linkedinLogo from "./files/Linkedin logo.png"
 
 export default function Together() {
   return (
