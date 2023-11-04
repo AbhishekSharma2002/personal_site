@@ -5,6 +5,8 @@ import Newsection1 from "./Components/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Together from "./Components/Together";
 import Login from "./Components/Login";
+import AddTodo from "./Components/AddTodo";
+import Todos from "./Components/Todos";
 
 function App() {
 
@@ -22,18 +24,8 @@ function App() {
 
         </Routes>
 
-        <div className="bg-[#172842] min-h-screen py-8">
-          <div className="w-full max-w-2xl mx-auto shadow-md rounded-lg px-4 py-3 text-white">
-            <h1 className="text-center text-2xl font-bold mb-8 mt-2">Manage Your Todo</h1>
-            <div className="mb-4">
-              {/* Todo form goes here */}
-            </div>
-            <div className="flex flex-wrap gap-y-3">
-              {/* Loop and add Todoitem here */}
-            </div>
-          </div>
-        </div>
-
+          <AddTodo/>
+          <Todos/>
         {/* < Footer className="sticky bottom-0" /> */}
       </Router >
     </>
