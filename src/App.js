@@ -21,11 +21,11 @@ function App() {
           <Route path="/newsection1" element={<Newsection1 />} />
           <Route path="/work" element={<Together />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/todoList" element={<AddTodo />} Component={<Todos />} />
 
         </Routes>
-
-          <AddTodo/>
-          <Todos/>
+        <AddTodo />
+        <Todos />
         {/* < Footer className="sticky bottom-0" /> */}
       </Router >
     </>

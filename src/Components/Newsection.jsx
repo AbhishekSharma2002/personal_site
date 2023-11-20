@@ -52,7 +52,7 @@ export default function Newsection() {
   // }, [])
   return (
     <>
-      <div className='dark:text-white dark:bg-slate-800 h-screen'>
+      <div className='dark:text-white dark:bg-slate-800 h-screen w-screen'>
         <div className='flex max-h-max justify-center gap-10 items-center '>
           <div className=''>
             <div className='text-4xl'>Welcome to <b className='text-purple-700'>CodeWithAbhishek</b></div>
