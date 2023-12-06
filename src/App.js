@@ -26,7 +26,7 @@ function App() {
         </Routes>
         <AddTodo />
         <Todos />
-        {/* < Footer className="sticky bottom-0" /> */}
+        < Footer className="sticky bottom-0" />
       </Router >
     </>
   );
