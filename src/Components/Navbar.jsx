@@ -3,7 +3,7 @@ import { Link, Outlet } from 'react-router-dom'
 export default function index() {
   return (
     <>
-      <div className='sticky top-0 bg-white z-10 shadow-lg p-2 dark:bg-slate-800 w-screen'>
+      <div className='sticky top-0 bg-white z-10 shadow-lg p-2 dark:bg-slate-800 w-screen '>
         <div className='flex justify-between text-justify '>
           <p className='text-purple-700 font-bold pl-6 text-2xl'>CodeWithAbhishek</p>
           <div className='flex space-x-4'>

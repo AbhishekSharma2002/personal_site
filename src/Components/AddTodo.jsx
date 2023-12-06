@@ -14,8 +14,6 @@ function AddTodo() {
     setInput('')
   }
 
-  
-
   return (
     <form onSubmit={addTodoHandler} className='space-x-3 flex justify-center dark:bg-slate-800 w-screen'>
       <input
